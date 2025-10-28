@@ -7,7 +7,7 @@ Authors: [RangS](mailto:rangga19sj@gmail.com)
 
 -------------
 
-<p align="center">✨Check My Profile: <a href="https://nikolaskama.me/kickthemout-v2-0/"><i>RangS! 🎉</i></a></p>
+<p align="center">✨Check My Profile: <a href="https://github.com/RangS-1"><i>RangS! 🎉</i></a></p>
 
 -------------
 
