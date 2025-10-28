@@ -1,5 +1,5 @@
 # RangSpreter
-This is RangSpreter. The payloads that contains keylogger, screenshot and even webcam. This is for educational purposes and i don't
+This is RangSpreter. The payloads that contains keylogger, screenshot and even webcam.
 
 - compatible with python3
 
@@ -86,7 +86,13 @@ Examples:
   rangspreter>> dl data.docx
   rangspreter>> wcam
 ```
+</br>
+##Disclaimer
+This project and all associated files are provided for educational purposes only.
+They are intended to be used solely for learning, research, and personal development.
+Any commercial use, redistribution, or modification of this material without proper authorization is strictly prohibited.
 
-    
-
-
+The author assumes no responsibility for any misuse, damages, or consequences resulting from the use of this project.
+-------------
+<p align="center">IF YOU USE THIS PAYLOADS WITHOUT USE IT FOR EDUCATION, THEN YOU ARE IN TROUBLE!!</i></p>
+-------------
