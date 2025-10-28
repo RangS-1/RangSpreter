@@ -20,11 +20,11 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 
 ~ git clone https://github.com/RangS-1/RangSpreter.git
 
-~ cd kickthemout/
+~ cd RangSpreter/
 
-~/rangspreter ❯❯❯ sudo -H pip3 install -r requirements.txt
+~/RangSpreter ❯❯❯ sudo -H pip3 install -r requirements.txt
 
-~/rangspreter ❯❯❯ sudo python3 rangs.py
+~/RangSpreter ❯❯❯ sudo python3 rangs.py
 ```
 
     
