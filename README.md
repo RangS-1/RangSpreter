@@ -1,5 +1,5 @@
 # RangSpreter
-This is RangSpreter. The payloads that contains keylogger, screenshot and even webcam.
+This is RangSpreter. The payloads that contains keylogger, screenshot and even webcam. This is for educational purposes and i don't
 
 - compatible with python3
 
@@ -10,6 +10,8 @@ Authors: [RangS](mailto:rangga19sj@gmail.com)
 <p align="center">✨Check My Profile: <a href="https://github.com/RangS-1"><i>RangS! 🎉</i></a></p>
 
 -------------
+
+</br>
 
 ## Linux Installation
 
@@ -54,6 +56,8 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 
 ~/RangSpreter ❯ sudo python3 rangs.py
 ```
+
+-------------
 
 ## Usage
 
