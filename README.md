@@ -5,7 +5,7 @@ You need to change the IP Address to your computer IP and change port whatever y
 
 - compatible with python3
 
-Authors: [RangS](mailto:rangga19sj@gmail.com)
+Authors: [RangS](rangga19sj@gmail.com)
 
 -------------
 
