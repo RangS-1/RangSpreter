@@ -1,0 +1,4 @@
+colorama
+opencv-python
+pyautogui
+pynput
