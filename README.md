@@ -91,9 +91,11 @@ Examples:
   rangspreter>> wcam
 ```
 </br>
+
 ##Disclaimer
+
 This project and all associated files are provided for educational purposes only.
 They are intended to be used solely for learning, research, and personal development.
 Any commercial use, redistribution, or modification of this material without proper authorization is strictly prohibited.
 
-The author assumes no responsibility for any misuse, damages, or consequences resulting from the use of this project.
+<h1>The author assumes no responsibility for any misuse, damages, or consequences resulting from the use of this project.</h1>
