@@ -45,23 +45,7 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 ~/RangSpreter ❯ sudo python3 rangs.py
 ```
 
-## MacOs Installation
-
-You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-1/RangSpreter.git) and simply installing its requirements:
-
-```
-~ ❯ git clone https://github.com/RangS-1/RangSpreter.git
-
-~ ❯ cd RangSpreter
-
-~/RangSpreter ❯ sudo -H pip3 install -r requirements.txt
-
-~/RangSpreter ❯ sudo python3 rangs.py
-```
-
 -------------
-
-</br>
 
 ## Usage
 
