@@ -47,6 +47,8 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 
 -------------
 
+</br>
+
 ## Usage
 
 ```
