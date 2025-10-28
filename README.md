@@ -93,6 +93,3 @@ They are intended to be used solely for learning, research, and personal develop
 Any commercial use, redistribution, or modification of this material without proper authorization is strictly prohibited.
 
 The author assumes no responsibility for any misuse, damages, or consequences resulting from the use of this project.
--------------
-<p align="center">IF YOU USE THIS PAYLOADS WITHOUT USE IT FOR EDUCATION, THEN YOU ARE IN TROUBLE!!</i></p>
--------------
