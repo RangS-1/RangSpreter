@@ -13,8 +13,6 @@ Authors: [RangS](rangga19sj@gmail.com)
 
 -------------
 
-</br>
-
 ## Linux Installation
 
 You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-1/RangSpreter.git) and simply installing its requirements:
@@ -44,8 +42,6 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 ```
 
 -------------
-
-</br>
 
 ## Usage
 
