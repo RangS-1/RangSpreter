@@ -20,8 +20,6 @@ Authors: [RangS](rangga19sj@gmail.com)
 You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-1/RangSpreter.git) and simply installing its requirements:
 
 ```
-~ ❯ sudo apt-get update && sudo apt-get install nmap
-
 ~ ❯ git clone https://github.com/RangS-1/RangSpreter.git
 
 ~ ❯ cd RangSpreter
@@ -40,9 +38,9 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 
 ~ ❯ cd RangSpreter
 
-~/RangSpreter ❯ sudo -H pip3 install -r requirements.txt
+~/RangSpreter ❯ pip3 install -r requirements.txt
 
-~/RangSpreter ❯ sudo python3 rangs.py
+~/RangSpreter ❯ python3 rangs.py
 ```
 
 -------------
@@ -78,6 +76,25 @@ Examples:
 ```
 </br>
 
+## Issues
+If you get error externally managed environment when trying to install requirements. Then you need a virtual environment, Here's how:
+```
+~ ❯ python -m venv venv
+
+~ ❯ source venv/bin/activate
+
+~ (venv) ❯
+
+~ ❯ git clone https://github.com/RangS-1/RangSpreter.git
+
+~ ❯ cd RangSpreter
+
+~ (venv) /RangSpreter ❯ pip3 install -r requirements.txt
+
+~ (venv) /RangSpreter ❯ python3 rangs.py
+```
+-------------
+</br>
 ## Disclaimer
 
 This project and all associated files are provided for educational purposes only.
