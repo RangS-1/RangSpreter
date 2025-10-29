@@ -70,7 +70,6 @@ Examples:
   rangspreter>> dl data.docx
   rangspreter>> wcam
 ```
-</br>
 
 ## Issues
 If you get error externally managed environment when trying to install requirements. Then you need a virtual environment, Here's how:
