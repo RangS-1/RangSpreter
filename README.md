@@ -5,7 +5,7 @@ You need to change the IP Address to your computer IP and change port whatever y
 
 - compatible with python3
 
-Authors: [RangS](rangga19sj@gmail.com)
+Authors: [RangS](mailto:rangga19sj@gmail.com)
 
 -------------
 
@@ -66,6 +66,9 @@ Default windows options:
   whoami                who you are in the target
 
 Examples:
+	  ░█▀▄░█▀█░█▀█░█▀▀░█▀▀░█▀█░█▀▄░█▀▀░▀█▀░█▀▀░█▀▄
+	  ░█▀▄░█▀█░█░█░█░█░▀▀█░█▀▀░█▀▄░█▀▀░░█░░█▀▀░█▀▄
+	  ░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░▀░░░▀░▀░▀▀▀░░▀░░▀▀▀░▀░▀
   rangspreter>> ul trojan.py 
   rangspreter>> dl data.docx
   rangspreter>> wcam
@@ -80,9 +83,9 @@ If you get error externally managed environment when trying to install requireme
 
 ~ (venv) ❯
 
-~ ❯ git clone https://github.com/RangS-1/RangSpreter.git
+~ (venv) ❯ git clone https://github.com/RangS-1/RangSpreter.git
 
-~ ❯ cd RangSpreter
+~ (venv) ❯ cd RangSpreter
 
 ~ (venv) /RangSpreter ❯ pip3 install -r requirements.txt
 
