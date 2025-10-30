@@ -96,7 +96,7 @@ def communicate_shell():
 		if command in ('exit', 'out'):
 			break
 		elif command == 'wipe':
-			os.system('wipe')
+			os.system('clear')
 		elif command[:3] == 'cd ':
 			pass
 		elif command[:2] == 'dl':
