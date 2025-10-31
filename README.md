@@ -1,7 +1,8 @@
 # RangSpreter
 
 This is RangSpreter. The payloads that contains keylogger, screenshot and even webcam. This payload can control other target with reverse shell. 
-You need to change the IP Address to your computer IP and change port whatever you want (examples: 5555, 9999).
+You need to change the IP Address to your computer IP and change port whatever you want (examples: 5555, 9999). The best thing about this payload is that it will NOT be detected by antivirus, except if you changes it to exe file, may be detected by some antiviruses.
+
 
 - compatible with python3
 
