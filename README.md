@@ -25,7 +25,7 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 
 ~/RangSpreter ❯ sudo -H pip3 install -r requirements.txt
 
-~/RangSpreter ❯ sudo python3 rangs.py
+~/RangSpreter ❯ sudo python3 rangspreter.py
 ```
 
 ## Windows Installation
@@ -39,7 +39,7 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 
 ~/RangSpreter ❯ pip3 install -r requirements.txt
 
-~/RangSpreter ❯ python3 rangs.py
+~/RangSpreter ❯ python3 rangspreter.py
 ```
 
 -------------
@@ -90,7 +90,7 @@ If you get error externally managed environment when trying to install requireme
 
 ~ (venv) /RangSpreter ❯ pip3 install -r requirements.txt
 
-~ (venv) /RangSpreter ❯ python3 rangs.py
+~ (venv) /RangSpreter ❯ python3 rangspreter.py
 ```
 -------------
 ## Disclaimer
