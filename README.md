@@ -10,7 +10,7 @@ You need to change the IP Address to your computer IP and change port whatever y
 
 Authors: [RangS](mailto:rangga19sj@gmail.com)
 <p>
-Inspirations: [Python_Project_ID](https://www.youtube.com/@pythonproject940)
+Inspirations: <a href="https://www.youtube.com/@pythonproject940">Python Project</a>
 
 -------------
 
