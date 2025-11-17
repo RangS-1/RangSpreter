@@ -63,6 +63,7 @@ You can download RangSpreter by cloning the [Git Repo](https://github.com/RangS-
 You don't need sudo privilege
 
 Options after get in:
+  wipe 					clear rangspreter output (instead clear command)
   ul                    upload file to target
   dl                    download file from target
   exit, out             get out from target
