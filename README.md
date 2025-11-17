@@ -5,8 +5,6 @@ You need to change the IP Address to your computer IP and change port whatever y
 
 - compatible with python3
 - compatible with windows 10
-- compatibles to control linux system
-- this payloads should be safe because will not survive in the system
 
 Authors: [RangS](mailto:rangga19sj@gmail.com)
 <p>
@@ -17,6 +15,17 @@ Inspirations: <a href="https://www.youtube.com/@pythonproject940">Python Project
 <p align="center">✨Check My Profile: <a href="https://github.com/RangS-1"><i>RangS! 🎉</i></a></p>
 
 -------------
+
+## New Update 
+
+I add screen recording feature that can record target screen. BUT, Your target will notice that's python app is open. AND if he open it, his screen become black and he can't do anything. Be careful and DON'T USE THIS PROJECT TO YOUR BAD IDEA!. Here's how to use it
+
+```
+	 ░█▀▄░█▀█░█▀█░█▀▀░█▀▀░█▀█░█▀▄░█▀▀░▀█▀░█▀▀░█▀▄
+	 ░█▀▄░█▀█░█░█░█░█░▀▀█░█▀▀░█▀▄░█▀▀░░█░░█▀▀░█▀▄
+	 ░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░▀░░░▀░▀░▀▀▀░░▀░░▀▀▀░▀░▀
+rangspreter>> sr
+```
 
 ## Linux Installation
 
@@ -62,6 +71,7 @@ Options after get in:
   stl                   stop keylogger (don't use this command if you don't start keylogger/sl)
   wcam                  start web camera (use escape button to stop webcam)
   sh                    screenshot target monitor
+  sr					(NEW FEATURE) screen recording
 
 Default windows options:
   mkdir                 make directory/folder
@@ -69,6 +79,7 @@ Default windows options:
   del                   delete file
   ipconfig              see target IP details
   whoami                who you are in the target
+  move 					move file to other directory
 
 Examples:
 	  ░█▀▄░█▀█░█▀█░█▀▀░█▀▀░█▀█░█▀▄░█▀▀░▀█▀░█▀▀░█▀▄
