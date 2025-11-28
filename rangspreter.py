@@ -81,7 +81,7 @@ def convert_byte_stream():
 		if key == 27:
 			break
 	tg.close()
-	cv2.destroyAllwindows()
+	cv2.destroyAllWindows()
 
 def stream_cam():
 	t = threading.Thread(target=convert_byte_stream)
@@ -117,7 +117,7 @@ def convert_byte_record():
 		if key == 27:
 			break
 	tg.close()
-	cv2.destroyAllwindows()
+	cv2.destroyAllWindows()
 
 def record():
 	t = threading.Thread(target=convert_byte_record)
