@@ -96,13 +96,12 @@ Regular Windows commands (ipconfig, whoami, mkdir, del, etc.) are also supported
 ## Disclaimer & Responsibility
 This tool is provided for learning about network security, red teaming techniques, and defensive countermeasures only.
 Misuse of this software for unauthorized access is a criminal offense in most jurisdictions. Use responsibly and only on systems you own or have explicit written permission to test.
+If you didn't know anything about cyber security, PLEASE LEAVE IMMEDIATELY BEFORE SOMETHING BAD HAPPENS! THIS IS YOUR LAST WARNING!.
+Ah yes, if you want to learn cyber security, <a href="https://www.youtube.com/playlist?list=PLGpswQpApOmNQDKPqCpDT8qXdjY-yucDm">here's the playlist</a> that [Python Project](https://github.com/nuhyamin1) made.
 
 ## License
 
-[MIT License](LICENSE.md)
-
-Created (and Modified) by RangS
-
-Inspiration by [Python Project](https://github.com/nuhyamin1)
-
-Email: rangga19sj@gmail.com
+- [MIT License](LICENSE.md)
+- Created (and Modified) by RangS
+- Inspiration by [Python Project](https://github.com/nuhyamin1)
+- Email: rangga19sj@gmail.com
