@@ -64,14 +64,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ## Usage
-! Edit rangspreter.py → change HOST and PORT to your listener IP and port (e.g. 192.168.1.100 and 5555).
-! Run the script on your machine → it will start listening.
-! Deploy the payload on the target Windows machine (run as Python script).
-! Once connected, you'll see the prompt: rangspreter>>
+- ! Edit rangspreter.py → change HOST and PORT to your listener IP and port (e.g. 192.168.1.100 and 5555).
+- ! Run the script on your machine → it will start listening.
+- ! Deploy the payload on the target Windows machine (run as Python script).
+- ! Once connected, you'll see the prompt: rangspreter>>
 
 ## Available Command
 
-| Folder       | Description                                                            | Condition     |
+| Commands     | Description                                                            | Condition     |
 |--------------|------------------------------------------------------------------------|---------------|
 |      h       | Show this help menu                                                    | Normal        |
 |     wipe     | Clear the screen                                                       | Normal        |
@@ -98,7 +98,11 @@ This tool is provided for learning about network security, red teaming technique
 Misuse of this software for unauthorized access is a criminal offense in most jurisdictions. Use responsibly and only on systems you own or have explicit written permission to test.
 
 ## License
+
 [MIT License](LICENSE.md)
+
 Created (and Modified) by RangS
+
 Inspiration by [Python Project](https://github.com/nuhyamin1)
+
 Email: rangga19sj@gmail.com
