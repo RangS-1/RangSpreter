@@ -102,6 +102,7 @@ Ah yes, if you want to learn cyber security, <a href="https://www.youtube.com/pl
 ## License
 
 - [MIT License](LICENSE.md)
+- [ETHICAL License](ETHICAL_USE.md)
 - Created (and Modified) by RangS
 - Inspiration by [Python Project](https://github.com/nuhyamin1)
 - Email: rangga19sj@gmail.com
